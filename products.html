@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="products.css">
+  <title>Products</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">The Candy Centre</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Shop
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="products.html">All Products</a></li>
+              <li><a class="dropdown-item" href="Sweets.html">Sweets</a></li>
+              <li><a class="dropdown-item" href="chocolates.html">Chocolates</a></li>
+              <li><a class="dropdown-item" href="drinks.html">Drinks</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">My Cart</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button id="searchbar" class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="column">
+        <img class="round-edge" src="imgs/sweets/sourpatchkids.jpg" name="Sour Patch Kids Tropical" alt="Sour Patch Kids Tropical" style="width:100%"></a>
+        <p>Sour Patch Kids Tropical</p>
+        <p>R55</p>
+        <button class="btn" onclick="addToCart(sourpatchkids)" name="Add to Cart">Add to Cart</button>
+      </div>
+      <div class="column">
+        <img class="round-edge" src="imgs/sweets/mikeandikes.jpg" name="Mike and Ike Big box" alt="Mike and Ike Big box" style="width:100%">
+        <p>Mike and Ike Big box</p>
+        <p>R85</p>
+        <button class="btn" onclick="addToCart(mikeandikes)" name="Add to Cart">Add to Cart</button>
+      </div>
+      <div class="column">
+        <img class="round-edge" src="imgs/sweets/starburst.jpg" name="Starburst" alt="Starburst" style="width:100%">
+        <p>Starburst</p>
+        <p>R50</p>
+        <button class="btn" onclick="addToCart(starburst)" name="Add to Cart">Add to Cart</button>
+      </div>
+      <div class="column">
+        <img class="round-edge" src="imgs/sweets/millions.jpg" name="Millions" alt="Millions" style="width:100%">
+        <p>Millions</p>
+        <p>R55</p>
+        <button class="btn" onclick="addToCart(millions)" name="Add to Cart">Add to Cart</button>
+      </div>
+      <div class="column">
+        <img class="round-edge" src="imgs/sweets/jollyrancher.jpg" name="Jolly Ranchers" alt="Jolly Ranchers" style="width:100%">
+        <p>Jolly Ranchers</p>
+        <p>R110</p>
+        <button class="btn" class="btn" onclick="addToCart(jollyrancher)" name="Add to Cart">Add to Cart</button>
+      </div>
+      <div class="column">
+        <img class="round-edge" src="imgs/sweets/warheadscubes.jpg" name="Warheads Cubes" alt="Warheads Cubes" style="width:100">
+        <p>Warheads Cubes</p>
+        <p>R55</p>
+        <button class="btn" onclick="addToCart(warheadscubes)" name="Add to Cart">Add to Cart</button>
+      </div>
+      <div class="column">
+        <img class="round-edge" src="imgs/sweets/jellybelly.jpg" name="Jelly Belly" alt="Jelly Belly" style="width:100%">
+        <p>Jelly Belly</p>
+        <p>R50</p>
+        <button class="btn" onclick="addToCart(jellybelly)" name="Add to Cart">Add to Cart</button>
+      </div>
+      <div class="column">
+        <img class="round-edge" src="imgs/sweets/trolli.jpg" name="Trolli" alt="Trolli" style="width:100%">
+        <p>Trolli</p>
+        <p>R45</p>
+        <button class="btn" onclick="addToCart(trolli)" name="Add to Cart">Add to Cart</button>
+      </div>
+      <div class="column">
+        <img class="round-edge" src="imgs/sweets/sweettarts.jpg" name="Sweet Tarts" alt="Sweet Tarts" style="width:100%">
+        <p>Sweet Tarts</p>
+        <p>R65</p>
+        <button class="btn" onclick="addToCart(sweettarts)" name="Add to Cart">Add to Cart</button>
+      </div>
+      <div class="column">
+        <img class="round-edge" src="imgs/chocolates/cadburybreakaway.jpg" name="Cadbury Breakaway" alt="Cadbury Breakaway" style="width:100%"></a>
+        <p>Cadbury Breakaway</p>
+        <p>R160</p>
+        <button class="btn" onclick="addToCart(cadburybreakaway)" name="Add to Cart">Add to Cart</button>
+      </div>
+      <div class="column">
+        <img class="round-edge" src="imgs/chocolates/kitkatdessert.jpg" name="KitKat Dessert Delight Range" alt="KitKat Dessert Delight Range" style="width:100%">
+        <p>KitKat Dessert Delight Range</p>
+        <p>R45</p>
+        <button class="btn" onclick="addToCart(kitkatdessert)" name="Add to Cart">Add to Cart</button>
+      </div>
+      <div class="column">
+        <img class="round-edge" src="imgs/chocolates/fingers.jpg" name="Cadbury Fingers" alt="Cadbury Fingers" style="width:100%">
+        <p>Cadbury Fingers</p>
+        <p>R50</p>
+        <button class="btn" onclick="addToCart(fingers)" name="Add to Cart">Add to Cart</button>
+      </div>
+      <div class="column">
+        <img class="round-edge" src="imgs/chocolates/hersheys.jpg" name="Hersheys Slab" alt="Hersheys Slab" style="width:100%">
+        <p>Hersheys Slab</p>
+        <p>R40</p>
+        <button class="btn" onclick="addToCart(hersheys)" name="Add to Cart">Add to Cart</button>
+      </div>
+      <div class="column">
+        <img class="round-edge" src="imgs/chocolates/kitkatmint.jpg" name="Kit Kat Mint Slab" alt="Kit Kat Mint Slab" style="width:100%">
+        <p>Kit Kat Mint Slab</p>
+        <p>R145</p>
+        <button class="btn" onclick="addToCart(kitkatmint)" name="Add to Cart">Add to Cart</button>
+      </div>
+      <div class="column">
+        <img class="round-edge" src="imgs/chocolates/kitkattriple.jpg" name="Kit Kat Triple Choc Cookie Slab" alt="Kit Kat Triple Choc Cookie Slab" style="width:100%">
+        <p>Kit Kat Triple Choc Cookie Slab</p>
+        <p>R60</p>
+        <button class="btn" onclick="addToCart(kitkattriple)" name="Add to Cart">Add to Cart</button>
+      </div>
+      <div class="column">
+        <img class="round-edge" src="imgs/chocolates/marssmash.jpg" name="Mars Smash" alt="Mars Smash" style="width:100%">
+        <p>Mars Smash</p>
+        <p>R50</p>
+        <button class="btn" onclick="addToCart(marssmash)" name="Add to Cart">Add to Cart</button>
+      </div>
+      <div class="column">
+        <img class="round-edge" src="imgs/chocolates/milkybar.jpg" name="Milkybar Cookies" alt="Milkybar Cookies" style="width:100%">
+        <p>Milkybar Cookies</p>
+        <p>R85</p>
+        <button class="btn" onclick="addToCart(milkybar)" name="Add to Cart">Add to Cart</button>
+      </div>
+      <div class="column">
+        <img class="round-edge" src="imgs/chocolates/milka.jpg" name="Milka Choco Thins" alt="Milka Choco Thins" style="width:100%">
+        <p>Milka Choco Thins</p>
+        <p>R80</p>
+        <button class="btn" onclick="addToCart(milka)" name="Add to Cart">Add to Cart</button>
+      </div>
+      <div class="column">
+        <img name="Arizona" class="round-edge" src="imgs/drinks/arizona.jpg" name="Arizona Grapeade" alt="Arizona Grapeade" style="width:100%"></a>
+        <p>Arizona Grapeade </p>
+        <p>R60</p>
+        <button class="btn" onclick="addToCart(arizona)" name="Add to Cart">Add to Cart</button>
+      </div>
+      <div class="column">
+        <img class="round-edge" src="imgs/drinks/bang.jpg" name="Bang Energy Drink" alt="Bang Energy Drink" style="width:100%">
+        <p>Bang Energy Drink</p>
+        <p>R30</p>
+        <button class="btn" onclick="addToCart(bang)" name="Add to Cart">Add to Cart</button>
+      </div>
+      <div class="column">
+        <img class="round-edge" src="imgs/drinks/fantablue.jpg" name="Fanta Blue Madness" alt="Fanta Blue Madness" style="width:100%">
+        <p>Fanta Blue Madness</p>
+        <p>R45</p>
+        <button class="btn" onclick="addToCart(fantablue)" name="Add to Cart">Add to Cart</button>
+      </div>
+      <div class="column">
+        <img class="round-edge" src="imgs/drinks/fantalemon.jpg" name="Fanta Lemon" alt="Fanta Lemon" style="width:100%">
+        <p>Fanta Lemon</p>
+        <p>R30</p>
+        <button class="btn" onclick="addToCart(fantalemon)" name="Add to Cart">Add to Cart</button>
+      </div>
+      <div class="column">
+        <img class="round-edge" src="imgs/drinks/fantamango.jpg" name="Fanta Mango" alt="Fanta Mango" style="width:100%">
+        <p>Fanta Mango</p>
+        <p>R50</p>
+        <button class="btn" onclick="addToCart(fantamango)" name="Add to Cart">Add to Cart</button>
+      </div>
+      <div class="column">
+        <img class="round-edge" src="imgs/drinks/gatorade.jpg" name="Gatorade Cool Blue" alt="Gatorade Cool Blue" style="width:100%">
+        <p>Gatorade Cool Blue</p>
+        <p>R55</p>
+        <button class="btn" onclick="addToCart(gatorade)" name="Add to Cart">Add to Cart</button>
+      </div>
+      <div class="column">
+        <img class="round-edge" src="imgs/drinks/nesquik.jpg" name="Nesquik Hot Fudge Sundae Milk" alt="Nesquik Hot Fudge Sundae Milk" style="width:100%">
+        <p>Nesquik Hot Fudge Sundae Milk</p>
+        <p>R200</p>
+        <button class="btn" onclick="addToCart(nesquik)" name="Add to Cart">Add to Cart</button>
+      </div>
+      <div class="column">
+        <img class="round-edge" src="imgs/drinks/oceanbomb.jpg" name="Ocean Bomb Goku Soda" alt="Ocean Bomb Goku Soda" style="width:100%">
+        <p>Ocean Bomb Goku Soda</p>
+        <p>R45</p>
+        <button class="btn" onclick="addToCart(oceanbomb)" name="Add to Cart">Add to Cart</button>
+      </div>
+      <div class="column">
+        <img class="round-edge" src="imgs/drinks/sprite.jpg" name="Cherry Sprite" alt="Cherry Sprite" style="width:100%">
+        <p>Cherry Sprite</p>
+        <p>R30</p>
+        <button class="btn" onclick="addToCart(sprite)" name="Add to Cart">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+
+</html>

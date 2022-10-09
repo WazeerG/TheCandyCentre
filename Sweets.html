@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="sweets.css">
+  <title>Sweets</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">The Candy Centre</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Shop
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="products.html">All Products</a></li>
+              <li><a class="dropdown-item" href="Sweets.html">Sweets</a></li>
+              <li><a class="dropdown-item" href="chocolates.html">Chocolates</a></li>
+              <li><a class="dropdown-item" href="drinks.html">Drinks</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">My Cart</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button id="searchbar" class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="column">
+        <img class="round-edge" src="imgs/sweets/sourpatchkids.jpg" alt="Sour Patch Kids Tropical" style="width:100%"></a>
+        <p>Sour Patch Kids Tropical</p>
+        <p>R55</p>
+        <button class="btn" onclick="addToCart(sourpatchkids)" name="Add to Cart">Add to Cart</button>
+      </div>
+      <div class="column">
+        <img class="sweets" class="round-edge" src="imgs/sweets/mikeandikes.jpg" alt="Mike and Ike Big box" style="width:100%">
+        <p>Mike and Ike Big box</p>
+        <p>R85</p>
+        <button class="btn" onclick="addToCart(mikeandikes)" name="Add to Cart">Add to Cart</button>
+      </div>
+      <div class="column">
+        <img class="sweets" class="round-edge" src="imgs/sweets/starburst.jpg" alt="Starburst" style="width:100%">
+        <p>Starburst</p>
+        <p>R50</p>
+        <button class="btn" onclick="addToCart(starburst)" name="Add to Cart">Add to Cart</button>
+      </div>
+      <div class="column">
+        <img class="sweets" class="round-edge" src="imgs/sweets/millions.jpg" alt="Millions" style="width:100%">
+        <p>Millions</p>
+        <p>R55</p>
+        <button class="btn" onclick="addToCart(millions)" name="Add to Cart">Add to Cart</button>
+      </div>
+      <div class="column">
+        <img class="sweets" class="round-edge" src="imgs/sweets/jollyrancher.jpg" alt="Jolly Ranchers" style="width:100%">
+        <p>Jolly Ranchers</p>
+        <p>R110</p>
+        <button class="btn" class="btn" onclick="addToCart(jollyrancher)" name="Add to Cart">Add to Cart</button>
+      </div>
+      <div class="column">
+        <img class="sweets" class="round-edge" src="imgs/sweets/warheadscubes.jpg" alt="Warheads Cubes" style="width:100">
+        <p>Warheads Cubes</p>
+        <p>R55</p>
+        <button class="btn" onclick="addToCart(warheadscubes)" name="Add to Cart">Add to Cart</button>
+      </div>
+      <div class="column">
+        <img class="sweets" class="round-edge" src="imgs/sweets/jellybelly.jpg" alt="Jelly Belly" style="width:100%">
+        <p>Jelly Belly</p>
+        <p>R50</p>
+        <button class="btn" onclick="addToCart(jellybelly)" name="Add to Cart">Add to Cart</button>
+      </div>
+      <div class="column">
+        <img class="sweets" class="round-edge" src="imgs/sweets/trolli.jpg" alt="Trolli" style="width:100%">
+        <p>Trolli</p>
+        <p>R45</p>
+        <button class="btn" onclick="addToCart(trolli)" name="Add to Cart">Add to Cart</button>
+      </div>
+      <div class="column">
+        <img class="sweets" class="round-edge" src="imgs/sweets/sweettarts.jpg" alt="Sweet Tarts" style="width:100%">
+        <p>Sweet Tarts</p>
+        <p>R65</p>
+        <button class="btn" onclick="addToCart(sweettarts)" name="Add to Cart">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+
+</html>
