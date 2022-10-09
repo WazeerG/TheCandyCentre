@@ -74,11 +74,12 @@ document.getElementById("login-btn").addEventListener('click', function() {
 document.getElementById("register-btn").addEventListener('click', function() {
       const registerEmail = document.getElementById("register-email").value;
       const registerPassword = document.getElementById("register-password").value;
-const auth = getAuth();
+//const auth = getAuth();
 createUserWithEmailAndPassword(auth, registerEmail, registerPassword)
   .then((userCredential) => {
     // Signed in
     const user = userCredential.user;
+    alert("Success");
     // ...
   })
   .catch((error) => {
@@ -87,28 +88,3 @@ createUserWithEmailAndPassword(auth, registerEmail, registerPassword)
     // ..
   });
   });
-
-
-
-
-
-
-      /*            document.getElementById("register-btn").addEventListener('click', function() {
-                    const registerEmail = document.getElementById("register-email").value;
-                    const registerPassword = document.getElementById("register-password").value;
-
-                    createUserWithEmailAndPassword(auth, registerEmail, registerPassword)
-                      .then((userCredential) => {
-                          // Signed in
-                          const user = userCredential.user;
-                          document.getElementById("result-box").style.display = "inline";
-                          document.getElementById("register-div").style.display = "none";
-                          document.getElementById("result").innerHTML = "Welcome <br>" + registerEmail + "was Registered Successfully";
-                          firebase.catch((error) => {
-                            const errorCode = error.code;
-                            const errorMessage = error.message;
-                            document.getElementById("result-box").style.display = "inline";
-                            document.getElementById("register-div").style.display = "none";
-                            document.getElementById("result").innerHTML = "Sorry ! <br>+errorMessage";
-                          });
-*/
