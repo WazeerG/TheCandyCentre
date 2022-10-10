@@ -63,7 +63,7 @@ document.getElementById("register-btn").addEventListener('click', function() {
       const user = userCredential.user;
       alert("Success");
 
-      function onclick("register-btn") {
+      function onclick(register-btn) {
         window.location.href = 'products.html';
       };
       // ...
