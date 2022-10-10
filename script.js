@@ -53,6 +53,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
   });
 
 });
+/*
 document.getElementById("login-btn").addEventListener('click', function() {
   const loginemail = document.getElementById("login-email").value;
   const loginpassword = document.getElementById("login-password").value;
@@ -69,7 +70,7 @@ document.getElementById("login-btn").addEventListener('click', function() {
       alert(errorMessage);
     });
 });
-
+*/
 /*
 document.getElementById("register-btn").addEventListener('click', function() {
   const registeremail = document.getElementById("register-email").value;
