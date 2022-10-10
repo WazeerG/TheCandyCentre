@@ -73,21 +73,3 @@ function login() {
 }
 
 
-//document.getElementById("register-btn").addEventListener('click', function() {
-function register() {
-  const registeremail = document.getElementById("register-email").value;
-  const registerpassword = document.getElementById("register-password").value;
-  //const auth = getAuth();
-  createUserWithEmailAndPassword(auth, registerEmail, registerPassword).then((userCredential) => {
-      // Signed in
-      const user = userCredential.user;
-      alert("Success");
-      // ...
-    })
-    .catch((error) => {
-      const errorCode = error.code;
-      const errorMessage = error.message;
-      // ..
-    });
-}
-
