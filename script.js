@@ -55,7 +55,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 });
 
 //document.getElementById("login-btn").addEventListener('click', function() {
-function login(){
+function login() {
   const loginemail = document.getElementById("login-email").value;
   const loginpassword = document.getElementById("login-password").value;
   //  const auth = getAuth();
@@ -74,7 +74,7 @@ function login(){
 
 
 //document.getElementById("register-btn").addEventListener('click', function() {
-function register(){
+function register() {
   const registeremail = document.getElementById("register-email").value;
   const registerpassword = document.getElementById("register-password").value;
   //const auth = getAuth();
