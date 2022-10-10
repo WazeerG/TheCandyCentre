@@ -72,10 +72,10 @@ document.getElementById("login-btn").addEventListener('click', function() {
 
 
 document.getElementById("register-btn").addEventListener('click', function() {
-  const registerEmail = document.getElementById("registerEmail").value;
-  const registerPassword = document.getElementById("registerPassword").value;
+  const register-email = document.getElementById("register-email").value;
+  const register-password = document.getElementById("register-password").value;
   //const auth = getAuth();
-  createUserWithEmailAndPassword(auth, registerEmail, registerPassword).then((userCredential) => {
+  createUserWithEmailAndPassword(auth, register-email, register-password).then((userCredential) => {
       // Signed in
       const user = userCredential.user;
       alert("Success");
