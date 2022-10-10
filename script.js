@@ -53,9 +53,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
   });
 
 });
-
-//document.getElementById("login-btn").addEventListener('click', function() {
-function login() {
+//except this part
+document.getElementById("login-btn").addEventListener('click', function() {
   const loginemail = document.getElementById("login-email").value;
   const loginpassword = document.getElementById("login-password").value;
   //  const auth = getAuth();
@@ -70,6 +69,4 @@ function login() {
       const errorMessage = error.message;
       alert(errorMessage);
     });
-}
-
-
+});
