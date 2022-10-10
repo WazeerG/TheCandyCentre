@@ -54,7 +54,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 });
 
-document.getElementById("login-btn").addEventListener('click', function() {
+//document.getElementById("login-btn").addEventListener('click', function() {
+function login(){
   const loginemail = document.getElementById("login-email").value;
   const loginpassword = document.getElementById("login-password").value;
   //  const auth = getAuth();
@@ -69,10 +70,11 @@ document.getElementById("login-btn").addEventListener('click', function() {
       const errorMessage = error.message;
       alert(errorMessage);
     });
-});
+}
 
 
-document.getElementById("register-btn").addEventListener('click', function() {
+//document.getElementById("register-btn").addEventListener('click', function() {
+function register(){
   const registeremail = document.getElementById("register-email").value;
   const registerpassword = document.getElementById("register-password").value;
   //const auth = getAuth();
@@ -87,5 +89,5 @@ document.getElementById("register-btn").addEventListener('click', function() {
       const errorMessage = error.message;
       // ..
     });
-});
+}
 
