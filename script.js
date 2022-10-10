@@ -54,8 +54,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 });
 document.getElementById("login-btn").addEventListener('click', function() {
-  const login-email = document.getElementById("login-email").value;
-  const login-password = document.getElementById("login-password").value;
+  const loginemail = document.getElementById("login-email").value;
+  const loginpassword = document.getElementById("login-password").value;
   //  const auth = getAuth();
   signInWithEmailAndPassword(auth, loginEmail, loginPassword).then((userCredential) => {
       // Signed in
@@ -72,8 +72,8 @@ document.getElementById("login-btn").addEventListener('click', function() {
 
 
 document.getElementById("register-btn").addEventListener('click', function() {
-  const register-email = document.getElementById("register-email").value;
-  const register-password = document.getElementById("register-password").value;
+  const registeremail = document.getElementById("register-email").value;
+  const registerpassword = document.getElementById("register-password").value;
   //const auth = getAuth();
   createUserWithEmailAndPassword(auth, registerEmail, registerPassword).then((userCredential) => {
       // Signed in
