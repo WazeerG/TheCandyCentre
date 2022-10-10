@@ -54,8 +54,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 });
 document.getElementById("login-btn").addEventListener('click', function() {
-  const loginEmail = document.getElementById("login-email").value;
-  const loginPassword = document.getElementById("login-password").value;
+  const login-email = document.getElementById("login-email").value;
+  const login-password = document.getElementById("login-password").value;
   //  const auth = getAuth();
   signInWithEmailAndPassword(auth, loginEmail, loginPassword).then((userCredential) => {
       // Signed in
@@ -87,4 +87,3 @@ document.getElementById("register-btn").addEventListener('click', function() {
       // ..
     });
 });
-
