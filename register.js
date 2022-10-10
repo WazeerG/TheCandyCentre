@@ -62,15 +62,12 @@ document.getElementById("register-btn").addEventListener('click', function() {
       // Signed in
       const user = userCredential.user;
       alert("Success");
-
-      function onclick(registerbtn) {
         window.location.href = 'products.html';
-      };
       // ...
     })
     .catch((error) => {
       const errorCode = error.code;
       const errorMessage = error.message;
-      // ..
+      alert(errorMessage);
     });
 });
