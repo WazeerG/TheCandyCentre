@@ -70,7 +70,7 @@ document.getElementById("login-btn").addEventListener('click', function() {
     });
 });
 
-
+/*
 document.getElementById("register-btn").addEventListener('click', function() {
   const registeremail = document.getElementById("register-email").value;
   const registerpassword = document.getElementById("register-password").value;
@@ -87,3 +87,4 @@ document.getElementById("register-btn").addEventListener('click', function() {
       // ..
     });
 });
+*/
