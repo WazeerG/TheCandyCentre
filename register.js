@@ -61,7 +61,6 @@ document.getElementById("register-btn").addEventListener('click', function() {
   createUserWithEmailAndPassword(auth, registeremail, registerpassword).then((userCredential) => {
       // Signed in
       const user = userCredential.user;
-      alert("Success");
         window.location.href = 'products.html';
       // ...
     })
