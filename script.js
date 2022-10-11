@@ -61,7 +61,7 @@ document.getElementById("login-btn").addEventListener('click', function() {
   signInWithEmailAndPassword(auth, loginEmail, loginPassword).then((userCredential) => {
       // Signed in
       const user = userCredential.user;
-      alert("Success");
+      window.location.href = 'products.html';
       // ...
     })
     .catch((error) => {
