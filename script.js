@@ -53,12 +53,12 @@ window.addEventListener('DOMContentLoaded', (event) => {
   });
 
 });
-//except this part
+
 document.getElementById("login-btn").addEventListener('click', function() {
   const loginemail = document.getElementById("login-email").value;
   const loginpassword = document.getElementById("login-password").value;
   //  const auth = getAuth();
-  signInWithEmailAndPassword(auth, loginEmail, loginPassword).then((userCredential) => {
+  signInWithEmailAndPassword(auth, loginemail, loginpassword).then((userCredential) => {
       // Signed in
       const user = userCredential.user;
       window.location.href = 'products.html';
