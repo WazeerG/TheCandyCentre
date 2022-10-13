@@ -1,5 +1,5 @@
 function Search(){
-  var q =document.getElementById("searchbar").value;
+  var q =document.getElementById("search").value;
  $(".column").each(function(){
 
     var name = this.textContent;
