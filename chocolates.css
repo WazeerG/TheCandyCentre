@@ -17,3 +17,9 @@ p{
 .round-edge{
   border-radius: 15px;
 }
+.footer{
+  color: white;
+  text-align: center;
+  background: rgb(195,34,164);
+  background: linear-gradient(to right, rgba(195,34,164,1) 0%, rgba(45,234,253,1) 100%);
+}
