@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Shopping Cart</title>
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- Box Icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+   <!--Header -->
+   <header>
+       <!--Nav -->
+       <div class="nav container">
+           <a href="#" class="logo">The Candy Centre</a>
+           <!-- Cart-Icon -->
+           <i class='bx bxs-shopping-bag' id="Cart-Icon"></i>
+           <!-- Cart -->
+           <div class="cart"></div>
+           <h2 class="cart-title">Your Cart</h2>
+           <!-- content -->
+           <div class="cart-content">
+            <div class="cart-box">
+                <img src="image/img1.jfif" alt="" class="cart-image">
+                <div class="detail-box">
+                    <div class="cart-product-title">Fanta</div>
+                    <div class="cart-price">R12</div>
+                    <input type="number" value="1" class="cart-quantity">
+                </div>
+                <!-- Remove Cart -->
+                <i class='bx bxs-trash-alt cart remove'></i>
+            </div>
+           </div>
+            <!-- Total -->
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">R0</div>
+            </div>
+     <!-- Buy Button -->
+     <button type="button" class="btn-buy">Buy Now</button>
+      <!-- Cart Close -->
+      <i class='bx bx-x' id="close-cart"></i>
+       </div>
+   </header>
+   <!-- shop -->
+   <section class="shop container">
+<h2 class="section-title">Shop Products</h2>
+<!-- Content -->
+<div class="shop-content">
+    <!-- Box 1 -->
+    <div class="product-box">
+        <img src="image/img1.jfif" alt="" class="product-image">
+        <h2 class="product-title">Fanta Strawberry and Kiwi</h2>
+        <span class="price">R12</span>
+        <i class='bx bxs-shopping-bag add-cart'></i>
+    </div>
+</div>
+<!-- Box 2 -->
+<div class="product-box">
+    <img src="image/img2.jfif" alt="" class="product-image">
+    <h2 class="product-title">Fanta Orange</h2>
+    <span class="price">R15</span>
+    <i class='bx bxs-shopping-bag add-cart'></i>
+</div>
+<!-- Box 3 -->
+<div class="product-box">
+    <img src="image/img3.jfif" alt="" class="product-image">
+    <h2 class="product-title">Fanta Berry</h2>
+    <span class="price">R12</span>
+    <i class='bx bxs-shopping-bag add-cart'></i>
+</div>
+<!-- Box 4 -->
+<div class="product-box">
+    <img src="image/img4.jfif" alt="" class="product-image">
+    <h2 class="product-title">Fanta Exotic</h2>
+    <span class="price">R12</span>
+    <i class='bx bxs-shopping-bag add-cart'></i>
+</div>
+</section>
+   </section>
+   <!-- Link to JS -->
+   <script src="JS/Main.js"></script>
+</body>
+</html>
